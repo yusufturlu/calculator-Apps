@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Web site icon" href="caulculator.png">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="calculator-screen" id="display" disabled />
+        <div class="calculator-keys">
+            <button type="button" class="operator" onclick="appendToDisplay('+')">+</button>
+            <button type="button" class="operator" onclick="appendToDisplay('-')">-</button>
+            <button type="button" class="operator" onclick="appendToDisplay('*')"onclick="appendToDisplay('*')">&times;</button>
+            <button type="button" class="operator" onclick="appendToDisplay('/')">&divide;</button>
+
+            <button type="button" onclick="appendToDisplay('9')">9</button>
+            <button type="button" onclick="appendToDisplay('8')">8</button>
+            <button type="button" onclick="appendToDisplay('7')">7</button>
+            <button type="button" onclick="appendToDisplay('6')">6</button>
+            <button type="button" onclick="appendToDisplay('5')">5</button>
+            <button type="button" onclick="appendToDisplay('4')">4</button>
+            <button type="button" onclick="appendToDisplay('3')">3</button>
+            <button type="button" onclick="appendToDisplay('2')">2</button>
+            <button type="button" onclick="appendToDisplay('1')">1</button>
+            <button type="button" onclick="appendToDisplay('0')">0</button>
+            <button type="button" class="decimal" onclick="appendToDisplay('.')">.</button>
+            <button type="button">&copy</button>
+            <button type="button" class="all-clear" onclick="clearDisplay()">AC</button>
+            <button type="button" class="equal-sign" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <div class="message">
+        <div class="label" id="linkedin">
+            <p>Linkedin</p>
+        </div>
+    </div>
+    <div class="message" id="gitHub">
+        <div class="label" id="gitHubText">
+            <p>GitHub</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
